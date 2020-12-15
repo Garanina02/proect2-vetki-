@@ -11,3 +11,15 @@ Scanner reader = new Scanner(System.in);
       num2 = reader.nextDouble();
       System.out.print("\nEnter an operator (+, -, *, /): ");
       op = reader.next().charAt(0);
+witch(op) {
+         case '+': ans = num1 + num2;
+            break;
+case '-': ans = num1 - num2;
+break;
+case '/': ans = num1 / num2;
+break;
+case '*': ans = num1 * num2;
+break;
+default: System.out.printf("Error! Enter correct operator");
+return;
+}
